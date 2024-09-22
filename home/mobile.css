@@ -3,3 +3,81 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .container-header header{
+        grid-template-rows: 98px;
+    }
+    .container-header header .logo img{
+        width: 166px;
+    }
+    .container-header nav{
+        border: 3px solid var(--black-12);
+        padding: 8px;
+        border-radius: 10px;
+    }
+    .container-header nav ul li{
+        padding: 12px 20px;
+    }
+    .container-header nav ul li a{
+        font-size: 14px;
+    }
+    .container-header .header-right img{
+        height: 18px;
+    }
+    .container-header .head-logo-center img{
+        width: 300px;
+    }
+    .container-header .head-info .head-info-text h3{
+        font-size: 48px;
+    }
+    .container-header .head-info .head-info-text p{
+        font-size: 14px;
+    }
+    .container-header .head-info .head-info-btn{
+        padding: 14px 24px;
+        width: calc(209px - 48px)
+    }
+    .container-header .head-info .head-info-btn a{
+        font-size: 14px;
+    }
+    .container-header .head-info .head-info-btn img{
+        width: 15px;
+    }
+
+    .container-categories .categories-info .text h3{
+        font-size: 28px;
+    }
+    .container-categories .categories-info .text p{
+        font-size: 16px;
+    }
+    .container-categories .categories-info .slider{
+        padding: 12px;
+        border-radius: 10px;
+        grid-template-columns: 56px 69px 56px;
+        column-gap: 12px;
+    }
+    .container-categories .categories-info .slider .arrow-left,
+    .container-categories .categories-info .slider .arrow-right{
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .container-categories .categories-info .slider .slide-point .active{
+        width: 18px;
+    }
+    .container-categories .categories-info .slider .slide-point .inactive{
+        width: 14px;
+    }
+    .container-categories .categories-boxes .box{
+        padding: 24px;
+    }
+    .container-categories .categories-boxes .box .box-text p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container-header .head-info .head-info-text p{
+        width: 90%;
+    }
+}
