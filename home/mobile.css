@@ -79,6 +79,34 @@
     .container-categories .categories-boxes .box .box-text p{
         font-size: 16px;
     }
+    .container-devices{
+        margin-top: 120px;
+    }
+    .container-devices .devices-info{
+        margin-bottom: 60px;
+    }
+    .container-devices .devices-info h3{
+        font-size: 28px;
+    }
+    .container-devices .devices-info p{
+        font-size: 16px;
+    }
+    .container-devices .devices-boxes{
+        gap: 20px;
+    }
+    .container-devices .devices-boxes .box{
+        grid-template-rows: 54px 72px;
+        padding: 40px;
+    }
+    .container-devices .devices-boxes .box h3{
+        font-size: 20px;
+    }
+    .container-devices .devices-boxes .box p{
+        font-size: 16px;
+    }
+    .container-devices .devices-boxes .box .box-img img{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -100,6 +128,10 @@
         min-width: 140px;
         min-height: 140px;
     } */
+    .container-devices .devices-boxes .box{
+        grid-template-rows: 47px 72px;
+        padding: 30px;
+    }
 }
 @media screen and (max-width: 1024px){
     .center{
@@ -159,6 +191,23 @@
     .container-categories .slider-mobile{
         display: block;
     }
+    .container-devices .devices-boxes{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-devices .devices-boxes .box{
+        grid-template-rows: 54px 72px;
+    }
+    .container-devices .devices-boxes .box .box-img img{
+        width: 60%;
+        height: 60%;
+    }
+    .container-devices .devices-boxes .box p{
+        font-size: 14px;
+    }
+    .container-devices .devices-boxes .box{
+        grid-template-columns: 44px 1fr;
+        grid-template-rows: 44px 1fr;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -176,5 +225,26 @@
     }
     .container-categories .categories-boxes .box .box-text p{
         font-size: 14px;
+    }
+    .container-devices{
+        margin-top: 51px;
+    }
+    .container-devices .devices-boxes{
+        grid-template-columns: 1fr;
+    }
+    .container-devices .devices-info{
+        margin-bottom: 40px;
+    }
+    .container-devices .devices-info h3{
+        font-size: 20px;
+    }
+    .container-devices .devices-info p{
+        font-size: 14px;
+    }
+    .container-devices .devices-boxes .box{
+        padding: 24px;
+    }
+    .container-devices .devices-boxes .box h3{
+        font-size: 18px;
     }
 }

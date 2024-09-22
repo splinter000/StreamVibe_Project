@@ -277,3 +277,73 @@ body{
     height: 5px;
     background: var(--red-45);
 }
+
+/* Container Devices */
+
+.container-devices{
+    margin-top: 150px;
+}
+.container-devices .devices-info{
+    margin-bottom: 80px;
+}
+.container-devices .devices-info h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 150%;
+    color: var(--absolute-white);
+    margin-bottom: 14px;
+}
+.container-devices .devices-info p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+.container-devices .devices-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.container-devices .devices-boxes .box{
+    border: 1px solid var(--black-15);
+    border-radius: 12px;
+    padding: 50px;
+    /* background-color: var(--black-06);  */
+    background: linear-gradient(210deg, rgba(229, 0, 0, 0.1),  var(--black-06)30%);
+    display: grid;
+    grid-template-columns: 17% 1fr;
+    grid-template-rows: 72px 81px;
+    column-gap: 16px;
+    row-gap: 30px;
+    align-items: center;
+}
+.container-devices .devices-boxes .box h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--absolute-white);
+}
+.container-devices .devices-boxes .box p{
+    grid-column: 1/3;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--grey-60);
+}
+.container-devices .devices-boxes .box .box-img{
+    height: 100%;
+    border: 1px solid var(--black-12);
+    border-radius: 12px;
+    background: var(--black-08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-devices .devices-boxes .box .box-img{
+    width: 100%;
+    max-width: 100%;
+}
