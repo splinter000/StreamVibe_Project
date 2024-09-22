@@ -64,6 +64,13 @@ body{
 .container-header .header-right img:first-of-type{
     margin-right: 35px;
 }
+.container-header .header-right .burger{
+    display: none;
+    border: 3px solid var(--black-15);
+    border-radius: 6px;
+    padding: 12px;
+    background: var(--black-10);
+}
 .container-header .head-logo-center{
     margin-top: 75px;
     margin-bottom: 131px;
@@ -137,7 +144,6 @@ body{
     background-image: url(/home/img/head/head-background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    back
 }
 /* .container-header .head-background img{
     max-width: 100%;
@@ -255,4 +261,19 @@ body{
 }
 .container-categories .categories-boxes .box:hover img{
     filter: brightness(2);
+}
+.container-categories .slider-mobile{
+    border-radius: 20px;
+    width: 79px;
+    height: 5px;
+    background: var(--black-20);
+    margin: auto;
+    margin-top: 24px;
+    display: none;
+}
+.container-categories .slider-mobile .slider-mobile-active{
+    border-radius: 20px;
+    width: 20px;
+    height: 5px;
+    background: var(--red-45);
 }
