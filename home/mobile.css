@@ -107,6 +107,44 @@
     .container-devices .devices-boxes .box .box-img img{
         width: 50%;
     }
+    .container-faq{
+        margin-top: 120px;
+    }
+    .container-faq .faq-info{
+        margin-bottom: 60px;
+    }
+    .container-faq .faq-info .faq-info-text h3{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .container-faq .faq-info .faq-info-text p{
+        font-size: 16px;
+    }
+    .container-faq .faq-info .faq-button{
+        width: 140px;
+        height: 49px;
+    }
+    .container-faq .faq-info .faq-button a{
+        font-size: 14px;
+    }
+    .container-faq .faq-main{
+        column-gap: 40px;
+    }
+    .container-faq .faq-main .faq-item{
+        padding: 24px;
+    }
+    .container-faq .faq-main .faq-item .faq-item-info h3{
+        font-size: 20px;
+    }
+    .container-faq .faq-main .faq-item .faq-item-info p{
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .container-faq .faq-main .faq-item .counter{
+        width: 52px;
+        height: 54px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -208,6 +246,30 @@
         grid-template-columns: 44px 1fr;
         grid-template-rows: 44px 1fr;
     }
+    .container-faq{
+        margin-top: 80px;
+    }
+    .container-faq .faq-info{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .container-faq .faq-info .faq-info-text{
+        margin-bottom: 20px;
+    }
+    .container-faq .faq-info .faq-info-text h3{
+        font-size: 20px;
+    }
+    .container-faq .faq-info .faq-info-text p{
+        font-size: 14px;
+    }
+    .container-faq .faq-main{
+        grid-template-columns: 1fr;
+    }
+    .container-faq .faq-main .item-left .faq-item:last-child{
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(to right, rgba(229,0,0,0), rgba(229,0,0,1)25%, rgba(229,0,0,0)) 1;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -245,6 +307,21 @@
         padding: 24px;
     }
     .container-devices .devices-boxes .box h3{
+        font-size: 18px;
+    }
+    .container-faq .faq-main .faq-item{
+        padding: 20px 10px;
+        column-gap: 16px;
+    }
+    .container-faq .faq-main .faq-item{
+        grid-template-columns: 42px 1fr 30px;
+    }
+    .container-faq .faq-main .faq-item .counter{
+        width: 42px;
+        height: 46px;
+        font-size: 16px;
+    }
+    .container-faq .faq-info .faq-info-text h3{
         font-size: 18px;
     }
 }
