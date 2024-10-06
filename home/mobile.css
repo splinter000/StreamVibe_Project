@@ -190,7 +190,22 @@
         display: block;
     }
     .container-header nav{
+        position: absolute;
+        top: 7%;
+        left: 40%;
         display: none;
+    } 
+    .container-header nav.show{
+        display: block;
+    }
+    .container-header nav ul{  
+        display: block;
+    }
+    .container-header nav ul li{
+        padding: 24px 24px;
+    }
+    .container-header nav ul li a{
+        font-size: 25px;
     }
     .container-header .head-logo-center{
         margin-top: 48px;
@@ -209,8 +224,8 @@
         padding: 20px;
     }
     .container-categories .categories-boxes{
-        overflow-x: hidden;
-        column-gap: 20px;
+        /* overflow-x: hidden; */
+        column-gap: 0px;
     }
     .container-categories .categories-boxes .box{
         min-width: 178px;
@@ -225,9 +240,6 @@
     }
     .container-categories .categories-info .slider{
         display: none;
-    }
-    .container-categories .slider-mobile{
-        display: block;
     }
     .container-devices .devices-boxes{
         grid-template-columns: 1fr 1fr;

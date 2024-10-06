@@ -1,0 +1,72 @@
+@import "mixins.scss";
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    display: none;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+}
+
+.swiper-pagination-bullet-active{
+    // border: none;
+    width: 23px;
+    height: 4px;
+    background: var(--red-45);
+    // opacity: 1;
+}
+
+.swiper-pagination {
+    position: static;
+
+    .swiper-pagination-bullet {
+        border: none;
+        border-radius: 100px;
+        width: 16px;
+        height: 4px;
+        // background-color: var(--black-20);
+        margin: 0px;
+    }
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3px;
+    align-content: center;
+
+    .swiper-pagination-bullet {
+        margin: 0;
+    }
+}
+
+.swiper-css-mode.swiper-horizontal>.swiper-wrapper {
+    @include onlylarge(1024px){
+        scroll-snap-type:none; 
+    }
+}
+
+.container-categories .categories-boxes{
+    @include onlylarge(1024px){
+        display: flex;
+    }
+    .box{
+        @include onlylarge(1024px){
+            margin-right: 20px;
+        }
+    }
+    .mobile-active{
+        display: none;
+        @include onlylarge(1024px){
+            display: inline-block;
+        }
+    }
+}
+.container-categories .desktop-active{
+    @include onlylarge(1024px){
+        display: none;
+    }
+}

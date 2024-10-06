@@ -8,7 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,500;1,62..125,500&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style-extra.css">
+    <link rel="stylesheet" href="scss/swiper.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="/general/css/variable.css">
     <link rel="stylesheet" href="/general/css/reset.css">
@@ -26,7 +34,7 @@
                 <div class="logo">
                     <img src="/general/logo_desktop.svg" alt="logo">
                 </div>
-                <nav>
+                <nav id="menu" class="animate__animated">
                     <ul>
                         <li><a href="home.html">Home</a></li>
                         <li><a href="home.html">Movies & Shows</a></li>
@@ -35,9 +43,15 @@
                     </ul>
                 </nav>
                 <div class="header-right">
-                    <img class="desktop" src="/home/img/head/search.svg" alt="seearch">
-                    <img class="desktop" src="/home/img/head/bell.svg" alt="notifications">
-                    <img class="burger" src="/home/img/head/burger-mobile.svg" alt="burger">
+                    <div class="search desktop">
+                        <img  src="/home/img/head/search.svg" alt="seearch">
+                    </div>
+                    <div class="notifications desktop">
+                        <img  src="/home/img/head/bell.svg" alt="notifications">
+                    </div>
+                    <div class="burger" id="burger">
+                    <img src="/home/img/head/burger-mobile.svg" alt="burger">
+                    </div>
                 </div>
             </header>
 
@@ -58,67 +72,280 @@
         </section>
 
 
-        <section class="container-categories center">
+        <section class="container-categories center swiper mySwiper">
+
             <div class="categories-info">
                 <div class="text">
                     <h3>Explore our wide variety of categories</h3>
                     <p>Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new</p>
                 </div>
                 <div class="slider">
-                    <div class="arrow-left">
+                    <div class="arrow-left swiper-button-prev">
                         <img src="/home/img/categories/arrow.svg" alt="arrow-left">
                     </div>
-                    <div class="slide-point">
-                        <hr class="active">
-                        <hr class="inactive">
-                        <hr class="inactive">
-                        <hr class="inactive">
-                    </div>
-                    <div class="arrow-right">
+                    <div class="swiper-pagination"></div>
+                    <div class="arrow-right swiper-button-next">
                         <img src="/home/img/categories/arrow.svg" alt="arrow-right">
                     </div>
                 </div>
             </div>
-            <div class="categories-boxes">
-                <div class="box">
-                    <img src="/home/img/categories/category1.png" alt="categoty1">
-                    <div class="box-text">
-                        <p>Action</p>
-                        <img src="/home/img/categories/arrow.svg" alt="arrow">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide categories-boxes">
+                    <div class="box">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box mobile-active">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="/home/img/categories/category2.png" alt="categoty2">
-                    <div class="box-text">
-                        <p>Adventure</p>
-                        <img src="/home/img/categories/arrow.svg" alt="arrow">
+                <div class="swiper-slide categories-boxes desktop-active">
+                    <div class="box">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="/home/img/categories/category3.png" alt="categoty3">
-                    <div class="box-text">
-                        <p>Comedy</p>
-                        <img src="/home/img/categories/arrow.svg" alt="arrow">
+                <div class="swiper-slide categories-boxes desktop-active">
+                    <div class="box">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="/home/img/categories/category4.png" alt="categoty4">
-                    <div class="box-text">
-                        <p>Drama</p>
-                        <img src="/home/img/categories/arrow.svg" alt="arrow">
+                <div class="swiper-slide categories-boxes desktop-active">
+                    <div class="box">
+                        <img src="/home/img/categories/category1.png" alt="categoty1">
+                        <div class="box-text">
+                            <p>Action</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category2.png" alt="categoty2">
+                        <div class="box-text">
+                            <p>Adventure</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category3.png" alt="categoty3">
+                        <div class="box-text">
+                            <p>Comedy</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category4.png" alt="categoty4">
+                        <div class="box-text">
+                            <p>Drama</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/home/img/categories/category5.png" alt="categoty5">
+                        <div class="box-text">
+                            <p>Horror</p>
+                            <img src="/home/img/categories/arrow.svg" alt="arrow">
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="/home/img/categories/category5.png" alt="categoty5">
-                    <div class="box-text">
-                        <p>Horror</p>
-                        <img src="/home/img/categories/arrow.svg" alt="arrow">
-                    </div>
-                </div>
-            </div>
-            <div class="slider-mobile">
-                <div class="slider-mobile-active"></div>
-            </div>
+            </div>   
+
         </section>
 
 
@@ -192,11 +419,12 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>What is StreamVibe?</h3>
-                            <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                            <!-- <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p> -->
                         </div>
-                        <div class="minus">
-                            <img src="/home/img/faq/minus.svg" alt="minus">
+                        <div class="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
                     </div>
                     <div class="faq-item">
                         <div class="counter">
@@ -204,12 +432,14 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>How do I sign up for StreamVibe?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="faq-item">
                         <div class="counter">
@@ -217,12 +447,14 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>How much does StreamVibe cost?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="faq-item">
                         <div class="counter">
@@ -230,12 +462,14 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>What is the StreamVibe free trial?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="item-right">
@@ -245,12 +479,14 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>What content is available on StreamVibe?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="faq-item">
                         <div class="counter">
@@ -258,12 +494,14 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>How do I contact StreamVibe customer support?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="faq-item">
                         <div class="counter">
@@ -271,12 +509,14 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>How can I watch StreamVibe?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="faq-item">
                         <div class="counter">
@@ -284,17 +524,191 @@
                         </div>
                         <div class="faq-item-info">
                             <h3>What are the StreamVibe payment methods?</h3>
-                            <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
                         </div>
                         <div class="plus">
-                            <img src="/home/img/faq/plus.svg" alt="plus">
+                            <img class="img-switch" src="/home/img/faq/plus.svg" alt="plus">
                         </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-subscribe center">
+            <div class="subscribe-info">
+                <div class="info-text">
+                    <h3>Choose the plan that's right for you</h3>
+                    <p>Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+                </div>
+                <div class="info-buttons">
+                    <div class="button active" id="monthly">
+                        Monthly
+                    </div>
+                    <div class="button" id="yearly">
+                        Yearly
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe-main">
+                <div class="subscribe-card">
+                    <h3>Basic Plan</h3>
+                    <p>Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                    <div class="subscribe-period">
+                        <p class="month animate__animated animate__fadeInDown"><span class="price-m">$9.99</span> /month</p>
+                        <p class="year disabled animate__animated animate__fadeInDown"><span class="price-y">$118.99</span> /year</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="button-left">
+                            <a href="#">Start Free Trial</a>
+                        </div>
+                        <div class="button-right">
+                            <a href="#">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-card">
+                    <h3>Standard Plan</h3>
+                    <p>Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                    <div class="subscribe-period">
+                        <p class="month animate__animated animate__fadeInDown"><span class="price-m">$12.99</span> /month</p>
+                        <p class="year disabled animate__animated animate__fadeInDown"><span class="price-y">$154.99</span> /year</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="button-left">
+                            <a href="#">Start Free Trial</a>
+                        </div>
+                        <div class="button-right">
+                            <a href="#">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-card">
+                    <h3>Premium Plan</h3>
+                    <p>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                    <div class="subscribe-period">
+                        <p class="month animate__animated animate__fadeInDown"><span class="price-m">$14.99</span> /month</p>
+                        <p class="year disabled animate__animated animate__fadeInDown"><span>$178.99</span> /year</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="button-left">
+                            <a href="#">Start Free Trial</a>
+                        </div>
+                        <div class="button-right">
+                            <a href="#">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+
+        <section class="container-trial center">
+            <div class="trial-main">
+                <div class="trial-info">
+                    <h3>Start your free trial today!</h3>
+                    <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                </div>
+                <div class="trial-btn">
+                    <a href="#">Start a Free Trail</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="footer">
+            <div class="footer-main center">
+                <div class="footer-menu">
+                    <div class="main-row">
+                        <h3>Home</h3>
+                        <ul>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Movies</h3>
+                        <ul>
+                            <li><a href="#">Gernes</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">New Release</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Shows</h3>
+                        <ul>
+                            <li><a href="#">Gernes</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">New Release</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Subscription</h3>
+                        <ul>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li style="opacity: 0;"><a href="#">Plans</a></li>
+                            <li style="opacity: 0;"><a href="#">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Connect With Us</h3>
+                        <div class="social">
+                            <div class="social-img">
+                                <a href="#"><img src="/home/img/footer/social1.svg" alt="social1"></a>
+                            </div>
+                            <div class="social-img">
+                                <a href="#"><img src="/home/img/footer/social2.svg" alt="social2"></a>
+                            </div>
+                            <div class="social-img">
+                                <a href="#"><img src="/home/img/footer/social3.svg" alt="social3"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-policy">
+                    <p>@2023 streamvib, All Rights Reserved</p>
+                    <div class="policy-right">
+                        <a href="#">Terms of Use</a>
+                        <a href="#" class="policy-border">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
                     </div>
                 </div>
             </div>
         </section>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+    
 </body>
 </html>

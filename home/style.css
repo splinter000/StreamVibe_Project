@@ -60,16 +60,35 @@ body{
 .container-header .header-right{
     justify-self: end;
     align-self: center;
+    display: flex;
 }
-.container-header .header-right img:first-of-type{
-    margin-right: 35px;
+.container-header .header-right .search, .container-header .header-right .notifications{
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
 }
+.container-header .header-right .search:hover, .container-header .header-right .notifications:hover{
+    /* border: 1px solid var(--black-10); */
+    background: var(--grey-60);
+    opacity: 0.5;
+}
+.container-header .header-right .search{
+    margin-right: 15px;
+}
+
 .container-header .header-right .burger{
     display: none;
     border: 3px solid var(--black-15);
     border-radius: 6px;
     padding: 12px;
     background: var(--black-10);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container-header .header-right .burger:hover{
+    background: var(--absolute-black);
+    opacity: 0.5;
 }
 .container-header .head-logo-center{
     margin-top: 75px;
@@ -180,7 +199,7 @@ body{
     padding: 16px;
     background: var(--black-06);
     display: grid;
-    grid-template-columns: 56px 81px 56px;
+    grid-template-columns: 56px 1fr 56px;
     column-gap: 16px;
     grid-template-rows: 56px;
 }
@@ -444,17 +463,35 @@ body{
     color: var(--absolute-white);
     align-self: center;
 }
-.container-faq .faq-main .faq-item .faq-item-info p{
+.container-faq .faq-main .faq-item p{
+    grid-column: 2/3;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: var(--grey-60);
     margin-top: 20px;
+    /* transition: 0.5s; */
 }
-.container-faq .faq-main .faq-item .faq-item-info .answer-hide{
+.content{
     display: none;
 }
-.container-faq .faq-main .faq-item .plus, .container-faq .faq-main .faq-item .minus{
+.content.active{
+    display: block;
+}
+
+.container-faq .faq-main .faq-item .plus{
     align-self: center;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.container-faq .faq-main .faq-item .plus:hover{
+    background: var(--black-12);
 }
