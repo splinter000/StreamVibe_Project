@@ -230,7 +230,7 @@ body{
     grid-template-columns: repeat(4, 1fr);  
     column-gap: 3px;
 }
-.container-categories .categories-info .slider .slide-point .active{
+/* .container-categories .categories-info .slider .slide-point .active{
     border: none;
     border-radius: 100px;
     width: 23px;
@@ -245,7 +245,7 @@ body{
     height: 4px;
     background: var(--black-20);
     align-self: center;
-}
+} */
 .container-categories .categories-boxes{
     display: grid;
     grid-template-columns: repeat(5, 1fr);

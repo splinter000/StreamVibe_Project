@@ -47,6 +47,8 @@ document.querySelectorAll('.plus').forEach(element => {
     });
   });
 
+
+// Бургер меню
   const button = document.getElementById('burger');
   const element = document.getElementById('menu');
   let isVisible = false;
@@ -66,19 +68,3 @@ document.querySelectorAll('.plus').forEach(element => {
     }
     isVisible = !isVisible;
   });
-
-
-// document.querySelector('#burger').onclick = function () {
-//     document.querySelector('#menu').classList.toggle('show');
-//     if (document.querySelector('#menu').classList.contains('show')){
-//         removeElement()
-//     }
-// }
-
-// function removeElement() {
-//     const element = document.getElementById('menu');
-//     element.classList.add('animate__fadeOut');
-//     element.addEventListener('animationend', () => {
-//       element.remove();
-//     });
-//   }

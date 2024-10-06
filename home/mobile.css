@@ -155,17 +155,6 @@
         height: 500px;
         background-size: cover;
     }
-    /* .container-categories .categories-boxes{
-        overflow-x: hidden;
-    }
-    .container-categories .categories-boxes .box{
-        min-width: 178px;
-        min-height: 200px;
-    }
-    .container-categories .categories-boxes .box>img{
-        min-width: 140px;
-        min-height: 140px;
-    } */
     .container-devices .devices-boxes .box{
         grid-template-rows: 47px 72px;
         padding: 30px;
@@ -191,9 +180,10 @@
     }
     .container-header nav{
         position: absolute;
-        top: 7%;
-        left: 40%;
+        top: 20%;
+        width: 90%;
         display: none;
+        text-align: center;
     } 
     .container-header nav.show{
         display: block;
