@@ -160,7 +160,7 @@ body{
     height: 860px;
     position: absolute;
     z-index: -1;
-    background-image: url(/home/img/head/head-background.png);
+    background-image: url(../home/img/head/head-background.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -495,3 +495,4 @@ body{
 .container-faq .faq-main .faq-item .plus:hover{
     background: var(--black-12);
 }
+

@@ -38,10 +38,10 @@ document.querySelectorAll('.plus').forEach(element => {
 
       const img = element.querySelector('.img-switch');
       if (content.classList.contains('active')) {
-          img.src = '/home/img/faq/minus.svg';
+          img.src = '../home/img/faq/minus.svg';
           img.alt = 'minus';
       } else {
-          img.src = '/home/img/faq/plus.svg';
+          img.src = '../home/img/faq/plus.svg';
           img.alt = 'plus';
       }
     });

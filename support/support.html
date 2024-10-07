@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="icon" href="../general/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,500;1,62..125,500&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../movies_shows/scss/header.css">
+    <link rel="stylesheet" href="../movies_shows/scss/footer.css">
+    <link rel="stylesheet" href="../support/scss/style.css">
+    <link rel="stylesheet" href="../general/css/variable.css">
+    <link rel="stylesheet" href="../general/css/reset.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="container-header">
+            <header class="center">
+                <div class="logo">
+                    <img src="../general/logo_desktop.svg" alt="logo">
+                </div>
+                <nav id="menu" class="animate__animated">
+                    <ul>
+                        <li><a href="../home/home.html">Home</a></li>
+                        <li><a href="../movies_shows/movies.html">Movies & Shows</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="../home/home.html">Subscriptions</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="search desktop">
+                        <img  src="../home/img/head/search.svg" alt="seearch">
+                    </div>
+                    <div class="notifications desktop">
+                        <img  src="../home/img/head/bell.svg" alt="notifications">
+                    </div>
+                    <div class="burger" id="burger">
+                    <img src="../home/img/head/burger-mobile.svg" alt="burger">
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <section class="support-main center">
+            <div class="support-info">
+                <div class="info-text">
+                    <h3>Welcome to our support page!</h3>
+                    <p>We're here to help you with any problems you may be having with our product.</p>
+                </div>
+                <div class="info-img"></div>
+            </div>
+            <form class="support-form" action="" method="get">
+                    <div class="name">
+                        <label for="first-name">
+                            <p>First Name</p>           
+                            <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="Enter First Name">
+                        </label>
+                        <label for="last-name">
+                            <p>First Name</p>   
+                            <input type="text" id="last-name" name="last-name" autocomplete="family-name" placeholder="Enter Last Name">
+                        </label>
+                    </div>
+                    <div class="contact">
+                        <label for="email">
+                            <p>Email</p>           
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter Your Email">
+                        </label>
+                        <label>
+                            <p>Phone Number</p>
+                            <div class="phone">
+                                <div class="phone-region">
+                                    <img src="../support/img/region.svg" alt="region">
+                                    <img src="../support/img/region-btn.svg" alt="region-btn">
+                                </div>
+                                <input type="text" id="region" name="region" autocomplete="mobile" placeholder="Enter Your Phone Number">
+                            </div>  
+                        </label>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div class="send">
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree" name="agree">
+                            <label for="agree">I agree with Terms of Use and Privacy Policy</label>
+                        </div>
+                        <div class="message-btn">
+                            Send Message
+                        </div>
+                    </div>
+            </form>
+        </section>
+
+
+        <section class="container-faq center">
+            <div class="faq-info">
+                <div class="faq-info-text">
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</p>
+                </div>
+                <div class="faq-button">
+                    <a href="support.html">Ask a Question</a>
+                </div>
+            </div>
+            <div class="faq-main">
+                <div class="item-left">
+                    <div class="faq-item">
+                        <div class="counter">
+                            01
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>What is StreamVibe?</h3>
+                            <!-- <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="counter">
+                            02
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>How do I sign up for StreamVibe?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="counter">
+                            03
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>How much does StreamVibe cost?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="counter">
+                            04
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>What is the StreamVibe free trial?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="item-right">
+                    <div class="faq-item">
+                        <div class="counter">
+                            05
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>What content is available on StreamVibe?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="counter">
+                            06
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>How do I contact StreamVibe customer support?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="counter">
+                            07
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>How can I watch StreamVibe?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="counter">
+                            08
+                        </div>
+                        <div class="faq-item-info">
+                            <h3>What are the StreamVibe payment methods?</h3>
+                            <!-- <p class="answer-hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                        </div>
+                        <div class="plus">
+                            <img class="img-switch" src="../home/img/faq/plus.svg" alt="plus">
+                        </div>
+                        <p class="content animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-trial center">
+            <div class="trial-main">
+                <div class="trial-info">
+                    <h3>Start your free trial today!</h3>
+                    <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                </div>
+                <div class="trial-btn">
+                    <a href="#">Start a Free Trail</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-main center">
+                <div class="footer-menu">
+                    <div class="main-row">
+                        <h3>Home</h3>
+                        <ul>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Movies</h3>
+                        <ul>
+                            <li><a href="#">Gernes</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">New Release</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Shows</h3>
+                        <ul>
+                            <li><a href="#">Gernes</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">New Release</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Subscription</h3>
+                        <ul>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li style="opacity: 0;"><a href="#">Plans</a></li>
+                            <li style="opacity: 0;"><a href="#">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Connect With Us</h3>
+                        <div class="social">
+                            <div class="social-img">
+                                <a href="#"><img src="../home/img/footer/social1.svg" alt="social1"></a>
+                            </div>
+                            <div class="social-img">
+                                <a href="#"><img src="../home/img/footer/social2.svg" alt="social2"></a>
+                            </div>
+                            <div class="social-img">
+                                <a href="#"><img src="../home/img/footer/social3.svg" alt="social3"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-policy">
+                    <p>@2023 streamvib, All Rights Reserved</p>
+                    <div class="policy-right">
+                        <a href="#">Terms of Use</a>
+                        <a href="#" class="policy-border">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
