@@ -583,7 +583,7 @@ body{
             }
             input:checked+label::before{
                 background-color: var(--grey-90);
-                background-image: url(/support/img/check.svg);
+                background-image: url(../../support/img/check.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
