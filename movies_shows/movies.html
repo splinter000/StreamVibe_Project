@@ -1315,16 +1315,21 @@
     <script src="script/script.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-          cssMode: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          mousewheel: true,
-          keyboard: true,
+            cssMode: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
         });
       </script>
       <script>
