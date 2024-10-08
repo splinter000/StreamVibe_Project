@@ -350,7 +350,7 @@ body {
   }
 }
 .support-main .support-info .info-img {
-  background-image: url(/support/img/main-img.png);
+  background-image: url(../../support/img/main-img.png);
   background-position: center;
   background-size: contain;
   border-radius: 6px;

@@ -55,7 +55,7 @@ body {
   }
 }
 .container-recommended .rec-main .rec-info {
-  background-image: linear-gradient(rgba(15, 15, 15, 0), rgb(15, 15, 15)), url(/movies_shows/img/rec-background.jpg);
+  background-image: linear-gradient(rgba(15, 15, 15, 0), rgb(15, 15, 15)), url(../../movies_shows/img/rec-background.jpg);
   background-size: cover;
   background-position: center;
 }
