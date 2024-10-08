@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="icon" href="../general/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,500;1,62..125,500&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../movies_shows/scss/header.css">
+    <link rel="stylesheet" href="../movies_shows/scss/footer.css">
+    <link rel="stylesheet" href="../subscribe/scss/style.css">
+    <link rel="stylesheet" href="../general/css/variable.css">
+    <link rel="stylesheet" href="../general/css/reset.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <section class="container-header">
+            <header class="center">
+                <div class="logo">
+                    <img src="../general/logo_desktop.svg" alt="logo">
+                </div>
+                <nav id="menu" class="animate__animated">
+                    <ul>
+                        <li><a href="../home/home.html">Home</a></li>
+                        <li><a href="../movies_shows/movies.html">Movies & Shows</a></li>
+                        <li><a href="../support/support.html">Support</a></li>
+                        <li><a href="subscribe.html">Subscriptions</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="search desktop">
+                        <img  src="../home/img/head/search.svg" alt="seearch">
+                    </div>
+                    <div class="notifications desktop">
+                        <img  src="../home/img/head/bell.svg" alt="notifications">
+                    </div>
+                    <div class="burger" id="burger">
+                    <img src="../home/img/head/burger-mobile.svg" alt="burger">
+                    </div>
+                </div>
+            </header>
+        </section>
+
+
+        <section class="container-subscribe center">
+            <div class="subscribe-info">
+                <div class="info-text">
+                    <h3>Choose the plan that's right for you</h3>
+                    <p>Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+                </div>
+                <div class="info-buttons">
+                    <div class="button active" id="monthly">
+                        Monthly
+                    </div>
+                    <div class="button" id="yearly">
+                        Yearly
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe-main">
+                <div class="subscribe-card">
+                    <h3>Basic Plan</h3>
+                    <p>Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                    <div class="subscribe-period">
+                        <p class="month animate__animated animate__fadeInDown"><span class="price-m">$9.99</span> /month</p>
+                        <p class="year disabled animate__animated animate__fadeInDown"><span class="price-y">$118.99</span> /year</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="button-left">
+                            <a href="#">Start Free Trial</a>
+                        </div>
+                        <div class="button-right">
+                            <a href="#">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-card">
+                    <h3>Standard Plan</h3>
+                    <p>Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                    <div class="subscribe-period">
+                        <p class="month animate__animated animate__fadeInDown"><span class="price-m">$12.99</span> /month</p>
+                        <p class="year disabled animate__animated animate__fadeInDown"><span class="price-y">$154.99</span> /year</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="button-left">
+                            <a href="#">Start Free Trial</a>
+                        </div>
+                        <div class="button-right">
+                            <a href="#">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-card">
+                    <h3>Premium Plan</h3>
+                    <p>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                    <div class="subscribe-period">
+                        <p class="month animate__animated animate__fadeInDown"><span class="price-m">$14.99</span> /month</p>
+                        <p class="year disabled animate__animated animate__fadeInDown"><span>$178.99</span> /year</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="button-left">
+                            <a href="#">Start Free Trial</a>
+                        </div>
+                        <div class="button-right">
+                            <a href="#">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="container-plans center">
+            <div class="plans-info">
+                <h3>Compare our plans and find the right one for you</h3>
+                <p>StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.</p>
+            </div>
+            <table id="desktop">
+                <tr>
+                    <th>Features</th>
+                    <th>Basic</th>
+                    <th>Standart <span>Popular</span></th>
+                    <th>Premium</th>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>$9.99/Month</td>
+                    <td>$12.99/Month</td>
+                    <td>$14.99/Month</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Access to a wide selection of movies and shows, including some new releases.</td>
+                    <td>Access to a wider selection of movies and shows, including most new releases and exclusive content</td>
+                    <td>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</td>
+                </tr>
+                <tr>
+                    <td>Devices</td>
+                    <td>Watch on one device simultaneously</td>
+                    <td>Watch on Two device simultaneously</td>
+                    <td>Watch on Four device simultaneously</td>
+                </tr>
+                <tr>
+                    <td>Free Trail</td>
+                    <td>7 Days</td>
+                    <td>7 Days</td>
+                    <td>7 Days</td>
+                </tr>
+                <tr>
+                    <td>Cancel Anytime</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>HDR</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Dolby Atmos</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Ad - Free</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Offline Viewing</td>
+                    <td>No</td>
+                    <td>Yes, for select titles.</td>
+                    <td>Yes, for all titles.</td>
+                </tr>
+                <tr>
+                    <td>Family Sharing</td>
+                    <td>No</td>
+                    <td>Yes, up to 5 family members.</td>
+                    <td>Yes, up to 6 family members.</td>
+                </tr>
+            </table>
+
+            <div class="plans-mobile" id="mobile">
+                <div class="buttons">
+                    <div id="basic">Basic</div>
+                    <div class="active" id="standart">Standart</div>
+                    <div id="premium">Premium</div>
+                </div>
+                <div class="plans-mobile-info">
+                    <div id="info-basic" class="hide animate__animated animate__fadeIn">
+                        <div>
+                            <div>
+                                <h4>Price</h4>
+                                <p>$9.99/Month</p>
+                            </div>
+                            <div>
+                                <h4>Free Trail</h4>
+                                <p>7 Days</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <h4>Content</h4>
+                            <p>Access to a wide selection of movies and shows, including some new releases.</p>
+                        </div>
+                        <div class="display">
+                            <h4>Devices</h4>
+                            <p>Watch on one device simultaneously</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Cancel Anytime</h4>
+                                <p>Yes</p>
+                            </div>
+                            <div>
+                                <h4>HDR</h4>
+                                <p>No</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Dolby Atmos</h4>
+                                <p>No</p>
+                            </div>
+                            <div>
+                                <h4>Ad - Free</h4>
+                                <p>No</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Offline Viewing</h4>
+                                <p>No</p>
+                            </div>
+                            <div>
+                                <h4>Family Sharing</h4>
+                                <p>No</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="info-standart" class="show animate__animated animate__fadeIn">
+                        <div>
+                            <div>
+                                <h4>Price</h4>
+                                <p>$12.99/Month</p>
+                            </div>
+                            <div>
+                                <h4>Free Trail</h4>
+                                <p>7 Days</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <h4>Content</h4>
+                            <p>Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                        </div>
+                        <div class="display">
+                            <h4>Devices</h4>
+                            <p>Watch on Two device simultaneously</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Cancel Anytime</h4>
+                                <p>Yes</p>
+                            </div>
+                            <div>
+                                <h4>HDR</h4>
+                                <p>Yes</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Dolby Atmos</h4>
+                                <p>Yes</p>
+                            </div>
+                            <div>
+                                <h4>Ad - Free</h4>
+                                <p>Yes</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Offline Viewing</h4>
+                                <p>Yes, for select titles.</p>
+                            </div>
+                            <div>
+                                <h4>Family Sharing</h4>
+                                <p>5 family members.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="info-premium" class="hide animate__animated animate__fadeIn">
+                        <div>
+                            <div>
+                                <h4>Price</h4>
+                                <p>$14.99/Month</p>
+                            </div>
+                            <div>
+                                <h4>Free Trail</h4>
+                                <p>7 Days</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <h4>Content</h4>
+                            <p>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                        </div>
+                        <div class="display">
+                            <h4>Devices</h4>
+                            <p>Watch on Four device simultaneously</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Cancel Anytime</h4>
+                                <p>Yes</p>
+                            </div>
+                            <div>
+                                <h4>HDR</h4>
+                                <p>Yes</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Dolby Atmos</h4>
+                                <p>Yes</p>
+                            </div>
+                            <div>
+                                <h4>Ad - Free</h4>
+                                <p>Yes</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Offline Viewing</h4>
+                                <p>Yes, for all titles.</p>
+                            </div>
+                            <div>
+                                <h4>Family Sharing</h4>
+                                <p>Yes, up to 6 family members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-trial center">
+            <div class="trial-main">
+                <div class="trial-info">
+                    <h3>Start your free trial today!</h3>
+                    <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                </div>
+                <div class="trial-btn">
+                    <a href="#">Start a Free Trail</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-main center">
+                <div class="footer-menu">
+                    <div class="main-row">
+                        <h3>Home</h3>
+                        <ul>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Movies</h3>
+                        <ul>
+                            <li><a href="#">Gernes</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">New Release</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Shows</h3>
+                        <ul>
+                            <li><a href="#">Gernes</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">New Release</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Subscription</h3>
+                        <ul>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li style="opacity: 0;"><a href="#">Plans</a></li>
+                            <li style="opacity: 0;"><a href="#">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-row">
+                        <h3>Connect With Us</h3>
+                        <div class="social">
+                            <div class="social-img">
+                                <a href="#"><img src="../home/img/footer/social1.svg" alt="social1"></a>
+                            </div>
+                            <div class="social-img">
+                                <a href="#"><img src="../home/img/footer/social2.svg" alt="social2"></a>
+                            </div>
+                            <div class="social-img">
+                                <a href="#"><img src="../home/img/footer/social3.svg" alt="social3"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-policy">
+                    <p>@2023 streamvib, All Rights Reserved</p>
+                    <div class="policy-right">
+                        <a href="#">Terms of Use</a>
+                        <a href="#" class="policy-border">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
